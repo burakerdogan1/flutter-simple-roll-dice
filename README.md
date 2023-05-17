@@ -1,2 +1,2 @@
 # flutter-simple-roll-dice
-A very simple dice roll app written by flutter.
+A very simple dice app written by flutter.
