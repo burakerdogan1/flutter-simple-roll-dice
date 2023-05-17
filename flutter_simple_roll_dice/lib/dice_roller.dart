@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_simple_roll_dice/styled_text.dart';
 
 final Random random = Random(); //global variable
 
@@ -17,13 +18,14 @@ class _DiceRollerState extends State<DiceRoller> {
   void rollDice() {
     setState(() {
       var nextImage = random.nextInt(6) + 1;
-      activeDiceImage = "assets/images/$nextImage.png";
+      activeDiceImage = "assets/images/dice-$nextImage.png";
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Image.asset(
           activeDiceImage,
@@ -32,7 +34,7 @@ class _DiceRollerState extends State<DiceRoller> {
         const SizedBox(height: 20),
         TextButton(
           onPressed: rollDice,
-          child: const Text("Roll Dice"),
+          child: const StyledText("Roll Dice"),
         )
       ],
     );

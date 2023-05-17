@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_roll_dice/gradient_container.dart';
+import 'package:flutter_simple_roll_dice/styled_text.dart';
 
 void main() {
   runApp(
@@ -11,7 +12,14 @@ void main() {
         useMaterial3: true,
       ),
       home: Scaffold(
-        body: GradientContainer(),
+        appBar: AppBar(
+          backgroundColor: Colors.amber[700],
+          title: const StyledText(
+            "Dice Roller",
+          ),
+          centerTitle: true,
+        ),
+        body: const GradientContainer(),
       ),
     ),
   );
