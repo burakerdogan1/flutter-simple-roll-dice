@@ -6,3 +6,5 @@ A very simple dice app written by flutter.
 This text is added for learning branch term, by creating this branch as test-changes
 
 This text is added for learning branch term, by creating this branch as test2-change.
+
+This text is added in main branch for controlling.
