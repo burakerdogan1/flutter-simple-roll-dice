@@ -7,4 +7,8 @@ This text is added for learning branch term, by creating this branch as test-cha
 
 This text is added for learning branch term, by creating this branch as test2-change.
 
+This text is added to test2-branch to see if we can keep going an unmerged branch.
+
 This text is added in main branch for controlling.
+
+
